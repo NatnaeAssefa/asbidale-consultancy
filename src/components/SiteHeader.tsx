@@ -38,10 +38,8 @@ export function SiteHeader() {
               <BrandMark />
             </span>
             <span>
-              <span className="brand-word" style={{ display: "block" }}>
-                ASBIDALE
-              </span>
-              <span className="brand-sub">አስበዳሌ · Consultancy Services</span>
+              <span className="brand-word">Asbidale Consultancy Services</span>
+              <span className="brand-sub">Pvt. Ltd. Co.</span>
             </span>
           </a>
           <nav className="mainnav" aria-label="Primary">

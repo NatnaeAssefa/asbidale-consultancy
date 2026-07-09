@@ -502,18 +502,11 @@ export default function Home() {
         <div className="wrap">
           <div className="foot-top">
             <div className="foot-brand">
-              <span
-                className="brand-word"
-                style={{
-                  fontFamily: "var(--disp)",
-                  fontWeight: 700,
-                  fontSize: 18,
-                }}
-              >
-                ASBIDALE
-              </span>
+              <span className="brand-word">Asbidale Consultancy Services</span>
+              <span className="brand-sub">Pvt. Ltd. Co.</span>
               <p>
-                Asbidale Consultancy Services PLC &mdash; a multidisciplinary
+                Asbidale Consultancy Services Pvt. Ltd. Co. &mdash; a
+                multidisciplinary
                 consultancy bridging clinical research and AI innovation across
                 Ethiopia and beyond.
               </p>
@@ -557,7 +550,8 @@ export default function Home() {
           </div>
           <div className="foot-bottom">
             <span>
-              &copy; 2026 Asbidale Consultancy Services PLC. All rights
+              &copy; 2026 Asbidale Consultancy Services Pvt. Ltd. Co. All
+              rights
               reserved.
             </span>
             <span>

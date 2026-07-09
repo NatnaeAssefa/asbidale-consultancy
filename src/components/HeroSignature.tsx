@@ -7,13 +7,13 @@ export function HeroSignature() {
           y1="80"
           x2="1180"
           y2="80"
-          stroke="#d7ded5"
+          stroke="#d8dcea"
           strokeWidth="1"
         />
         <path
           d="M0,80 L260,80 L292,80 L308,30 L326,140 L344,55 L360,80 L400,80 L430,80 L460,60 L480,100 L500,80 L560,80"
           fill="none"
-          stroke="#bb8a34"
+          stroke="#1018cc"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -21,12 +21,12 @@ export function HeroSignature() {
         <path
           d="M560,80 L620,80 L650,45 L700,45 L730,110 L780,110 L810,60 L860,60"
           fill="none"
-          stroke="#1c8574"
+          stroke="#0c12a3"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-        <g stroke="#1c8574" strokeWidth="1.4" fill="#eef2ee">
+        <g stroke="#1018cc" strokeWidth="1.4" fill="#f4f5fa">
           <circle cx="860" cy="60" r="5" />
           <circle cx="940" cy="30" r="5" />
           <circle cx="960" cy="100" r="5" />
