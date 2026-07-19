@@ -37,7 +37,7 @@ export function SiteHeader() {
             <span className="brand-mark" aria-hidden="true">
               <BrandMark />
             </span>
-            <span>
+            <span className="brand-text">
               <span className="brand-word">Asbidale Consultancy Services</span>
               <span className="brand-sub">Pvt. Ltd. Co.</span>
             </span>
@@ -94,6 +94,15 @@ export function SiteHeader() {
             </a>
           </li>
         </ul>
+        <div className="mobile-cta">
+          <a
+            href="#contact"
+            className="btn solid"
+            onClick={() => setMobileOpen(false)}
+          >
+            Start a conversation
+          </a>
+        </div>
       </div>
     </>
   );
