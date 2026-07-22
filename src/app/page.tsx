@@ -386,23 +386,20 @@ export default function Home() {
               <div className="partner-col gold">
                 <div className="col-head">
                   <span className="dot" />
-                  <h3>National &amp; academic</h3>
+                  <h3>National institutions</h3>
                 </div>
                 <ul>
                   <li>
                     <b>Armauer Hansen Research Institute</b> (AHRI)
                   </li>
                   <li>
-                    <b>Ethiopian Public Health Institute</b> (EPHI)
+                    <b>CDT-Africa</b>
                   </li>
                   <li>
-                    <b>Addis Ababa University</b> (AAU)
+                    <b>Gondar University</b>
                   </li>
                   <li>
-                    <b>Ministry of Health</b> (MOH)
-                  </li>
-                  <li>
-                    <b>Ethiopian Food and Drug Authority</b> (EFDA)
+                    <b>Gambella Hospital</b>
                   </li>
                 </ul>
                 <p className="partner-note">
@@ -414,20 +411,23 @@ export default function Home() {
               <div className="partner-col teal">
                 <div className="col-head">
                   <span className="dot" />
-                  <h3>International collaborators</h3>
+                  <h3>International partners</h3>
                 </div>
                 <ul>
                   <li>
-                    <b>World Health Organization</b> (WHO)
+                    <b>Abbot RDT division</b>
                   </li>
                   <li>
-                    <b>International Vaccine Institute</b> (IVI)
+                    <b>ACE Research Africa</b>
                   </li>
                   <li>
-                    <b>Statens Serum Institut</b> (SSI)
+                    <b>Hargiessa Group Hospital</b> (Somaliland)
                   </li>
                   <li>
-                    <b>Imperial College London</b> (ICL)
+                    <b>Allegro Bio</b>, Belgium
+                  </li>
+                  <li>
+                    <b>InTec Products, Inc.</b>
                   </li>
                 </ul>
                 <p className="partner-note">
