@@ -367,9 +367,9 @@ export default function Home() {
 
         <hr className="rule" />
 
-        <section id="partners">
+        <section id="partners" className="partners-band">
           <div className="wrap">
-            <div className="section-head">
+            <div className="section-head partners-head">
               <div>
                 <div className="eyebrow">
                   Sec. 05 &mdash; Strategic partners
@@ -383,87 +383,134 @@ export default function Home() {
             </div>
 
             <div className="partners-grid">
-              <div className="partner-col gold">
-                <div className="col-head">
-                  <span className="dot" />
-                  <h3>National institutions</h3>
-                </div>
-                <ul>
+              <article className="partner-col tone-national">
+                <header className="partner-col-head">
+                  <span className="partner-idx" aria-hidden="true">
+                    01
+                  </span>
+                  <div>
+                    <p className="partner-kicker">Ethiopia</p>
+                    <h3>National institutions</h3>
+                  </div>
+                </header>
+                <p className="partner-note">
+                  Research excellence, regulatory alignment, and scientific
+                  credibility at home.
+                </p>
+                <ul className="partner-roster">
                   <li>
-                    <b>Armauer Hansen Research Institute</b> (AHRI)
+                    <span className="partner-mark">01</span>
+                    <span className="partner-name">
+                      Armauer Hansen Research Institute
+                      <em>AHRI</em>
+                    </span>
                   </li>
                   <li>
-                    <b>CDT-Africa</b>
+                    <span className="partner-mark">02</span>
+                    <span className="partner-name">CDT-Africa</span>
                   </li>
                   <li>
-                    <b>Gondar University</b>
+                    <span className="partner-mark">03</span>
+                    <span className="partner-name">Gondar University</span>
                   </li>
                   <li>
-                    <b>Gambella Hospital</b>
+                    <span className="partner-mark">04</span>
+                    <span className="partner-name">Gambella Hospital</span>
                   </li>
                 </ul>
-                <p className="partner-note">
-                  Foundation of our research excellence, regulatory alignment,
-                  and scientific credibility.
-                </p>
-              </div>
+              </article>
 
-              <div className="partner-col teal">
-                <div className="col-head">
-                  <span className="dot" />
-                  <h3>International partners</h3>
-                </div>
-                <ul>
+              <article className="partner-col tone-global">
+                <header className="partner-col-head">
+                  <span className="partner-idx" aria-hidden="true">
+                    02
+                  </span>
+                  <div>
+                    <p className="partner-kicker">Worldwide</p>
+                    <h3>International partners</h3>
+                  </div>
+                </header>
+                <p className="partner-note">
+                  Global health expertise across diagnostics, research, and
+                  clinical delivery.
+                </p>
+                <ul className="partner-roster">
                   <li>
-                    <b>Abbot RDT division</b>
+                    <span className="partner-mark">01</span>
+                    <span className="partner-name">Abbot RDT division</span>
                   </li>
                   <li>
-                    <b>ACE Research Africa</b>
+                    <span className="partner-mark">02</span>
+                    <span className="partner-name">ACE Research Africa</span>
                   </li>
                   <li>
-                    <b>Hargiessa Group Hospital</b> (Somaliland)
+                    <span className="partner-mark">03</span>
+                    <span className="partner-name">
+                      Hargiessa Group Hospital
+                      <em>Somaliland</em>
+                    </span>
                   </li>
                   <li>
-                    <b>Allegro Bio</b>, Belgium
+                    <span className="partner-mark">04</span>
+                    <span className="partner-name">
+                      Allegro Bio
+                      <em>Belgium</em>
+                    </span>
                   </li>
                   <li>
-                    <b>InTec Products, Inc.</b>
+                    <span className="partner-mark">05</span>
+                    <span className="partner-name">InTec Products, Inc.</span>
                   </li>
                 </ul>
-                <p className="partner-note">
-                  World-class expertise in global health, laboratory science, and
-                  large-scale public health interventions.
-                </p>
-              </div>
+              </article>
 
-              <div className="partner-col navy">
-                <div className="col-head">
-                  <span className="dot" />
-                  <h3>Sister companies</h3>
-                </div>
-                <ul>
+              <article className="partner-col tone-sister">
+                <header className="partner-col-head">
+                  <span className="partner-idx" aria-hidden="true">
+                    03
+                  </span>
+                  <div>
+                    <p className="partner-kicker">Network</p>
+                    <h3>Sister companies</h3>
+                  </div>
+                </header>
+                <p className="partner-note">
+                  Operational reach across care delivery and medical supply
+                  chains.
+                </p>
+                <ul className="partner-roster">
                   <li>
-                    <b>Chechela Medical Services PLC</b> &mdash; multi-specialty
-                    medical complex
+                    <span className="partner-mark">01</span>
+                    <span className="partner-name">
+                      Chechela Medical Services PLC
+                      <em>Multi-specialty complex</em>
+                    </span>
                   </li>
                   <li>
-                    <b>Ibex Hospital</b> &mdash; Gondar
+                    <span className="partner-mark">02</span>
+                    <span className="partner-name">
+                      Ibex Hospital
+                      <em>Gondar</em>
+                    </span>
                   </li>
                   <li>
-                    <b>JH Drugs and Medical Supplies Import PLC</b>
+                    <span className="partner-mark">03</span>
+                    <span className="partner-name">
+                      JH Drugs and Medical Supplies Import PLC
+                    </span>
                   </li>
                   <li>
-                    <b>Biljem Trading PLC</b>
+                    <span className="partner-mark">04</span>
+                    <span className="partner-name">Biljem Trading PLC</span>
                   </li>
                   <li>
-                    <b>Dr. Kalid and Families Pediatrics Center</b>
+                    <span className="partner-mark">05</span>
+                    <span className="partner-name">
+                      Dr. Kalid and Families Pediatrics Center
+                    </span>
                   </li>
                 </ul>
-                <p className="partner-note">
-                  Extending our operational capability across care delivery and
-                  medical supply chains.
-                </p>
-              </div>
+              </article>
             </div>
           </div>
         </section>
