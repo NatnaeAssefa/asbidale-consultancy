@@ -82,12 +82,6 @@ const team = [
     desc: "Consultant pediatrician and AI healthcare innovator.",
   },
   {
-    initials: "YY",
-    name: "Dr. Yoseph Y.",
-    role: "Data & Health Systems Specialist",
-    desc: "Focused on health data infrastructure and systems design.",
-  },
-  {
     initials: "TK",
     name: "Mr. Tilahun K.",
     role: "Operations Manager",
@@ -101,15 +95,21 @@ const team = [
   },
   {
     initials: "MY",
-    name: "Dr. Murriso Y.",
-    role: "Operations Manager",
-    desc: "Optimizing service delivery and team coordination.",
+    name: "Dr. Meron Yohannes, MSc, PhD",
+    role: "Consultant Project Officer",
+    desc: "Project leadership and delivery across clinical research programmes.",
   },
   {
-    initials: "AK",
-    name: "Dr. Achenef K.",
-    role: "Clinical Trial Data Scientist",
-    desc: "Epidemiology and AI innovation.",
+    initials: "RA",
+    name: "Rahel Alemu, MSc",
+    role: "Consultant Project Officer",
+    desc: "PhD candidate supporting project design, coordination, and delivery.",
+  },
+  {
+    initials: "SK",
+    name: "Samuel Kind, MSc",
+    role: "Senior Consultant Project Team Leader",
+    desc: "PhD candidate leading consultant project teams and programme delivery.",
   },
   {
     initials: "YA",
