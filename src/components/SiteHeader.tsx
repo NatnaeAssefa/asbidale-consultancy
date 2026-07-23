@@ -62,9 +62,9 @@ export function SiteHeader() {
     >
       <div className="headbar">
         <Link href="/#top" className="brand" onClick={() => setOpen(false)}>
-          <span className="brand-mark" aria-hidden="true">
-            <BrandMark />
-          </span>
+            <span className="brand-mark" aria-hidden="true">
+              <BrandMark priority />
+            </span>
           <span className="brand-text">
             <span className="brand-word">Asbidale Consultancy Services</span>
             <span className="brand-sub">Pvt. Ltd. Co.</span>

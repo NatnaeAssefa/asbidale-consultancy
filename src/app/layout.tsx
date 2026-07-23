@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   description:
     "Asbidale bridges clinical research and AI innovation, delivering high-integrity CRO services and data-driven digital health solutions across Ethiopia and beyond.",
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: "/asbidale-logo.png",
+    apple: "/asbidale-logo.png",
   },
 };
 
