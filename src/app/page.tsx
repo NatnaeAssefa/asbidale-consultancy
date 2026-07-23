@@ -1,5 +1,6 @@
 import { ContactForm } from "@/components/ContactForm";
 import { HeroSignature } from "@/components/HeroSignature";
+import { NavigatorSection } from "@/components/NavigatorSection";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const services = [
@@ -367,12 +368,14 @@ export default function Home() {
 
         <hr className="rule" />
 
+        <NavigatorSection />
+
         <section id="partners" className="partners-band">
           <div className="wrap">
             <div className="section-head partners-head">
               <div>
                 <div className="eyebrow">
-                  Sec. 05 &mdash; Strategic partners
+                  Sec. 06 &mdash; Strategic partners
                 </div>
                 <h2>An ecosystem, not a client list.</h2>
               </div>
@@ -519,7 +522,7 @@ export default function Home() {
           <div className="wrap">
             <div className="contact-grid">
               <div>
-                <div className="eyebrow gold">Sec. 06 &mdash; Get in touch</div>
+                <div className="eyebrow gold">Sec. 07 &mdash; Get in touch</div>
                 <h2>Let&apos;s discuss your next study or system.</h2>
                 <p className="contact-lede">
                   Whether you&apos;re a trial sponsor, a hospital, or a research
@@ -569,10 +572,19 @@ export default function Home() {
                     <a href="#services">Services</a>
                   </li>
                   <li>
+                    <a href="#navigator">Navigator</a>
+                  </li>
+                  <li>
                     <a href="#team">Team</a>
                   </li>
                   <li>
                     <a href="#partners">Partners</a>
+                  </li>
+                  <li>
+                    <a href="/dashboard">Investigator portal</a>
+                  </li>
+                  <li>
+                    <a href="/sponsor-dashboard">Sponsor workspace</a>
                   </li>
                   <li>
                     <a href="#contact">Contact</a>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Spectral } from "next/font/google";
+import { Providers } from "@/components/Providers";
 import "./globals.css";
+import "./portal.css";
 
 const spectral = Spectral({
   subsets: ["latin"],
@@ -42,7 +44,9 @@ export default function RootLayout({
       lang="en"
       className={`${spectral.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

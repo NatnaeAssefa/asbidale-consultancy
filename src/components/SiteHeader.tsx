@@ -1,19 +1,43 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
+import {
+  ArrowUpRight,
+  FlaskConical,
+  LayoutDashboard,
+  Menu,
+  X,
+} from "lucide-react";
 import { BrandMark } from "./BrandMark";
 
 const navLinks = [
-  { href: "#who-we-are", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#ai", label: "AI Projects" },
-  { href: "#team", label: "Team" },
-  { href: "#partners", label: "Partners" },
+  { href: "/#who-we-are", label: "About" },
+  { href: "/#services", label: "Services" },
+  { href: "/#navigator", label: "Navigator" },
+  { href: "/#ai", label: "AI Projects" },
+  { href: "/#team", label: "Team" },
+  { href: "/#partners", label: "Partners" },
+];
+
+const portals = [
+  {
+    href: "/dashboard",
+    label: "Investigator",
+    hint: "Site & milestone operations",
+    Icon: LayoutDashboard,
+  },
+  {
+    href: "/sponsor-dashboard",
+    label: "Sponsor",
+    hint: "Portfolio command center",
+    Icon: FlaskConical,
+  },
 ];
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -23,87 +47,97 @@ export function SiteHeader() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = mobileOpen ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
+    if (!open) return;
+    const onResize = () => {
+      if (window.innerWidth > 1100) setOpen(false);
     };
-  }, [mobileOpen]);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, [open]);
 
   return (
-    <>
-      <header id="site-header" className={scrolled ? "scrolled" : undefined}>
-        <div className="headbar">
-          <a href="#top" className="brand">
-            <span className="brand-mark" aria-hidden="true">
-              <BrandMark />
-            </span>
-            <span className="brand-text">
-              <span className="brand-word">Asbidale Consultancy Services</span>
-              <span className="brand-sub">Pvt. Ltd. Co.</span>
-            </span>
-          </a>
-          <nav className="mainnav" aria-label="Primary">
-            <ul>
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <a href={link.href}>{link.label}</a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <div className="head-actions">
-            <a href="#contact" className="btn solid">
-              Start a conversation
-            </a>
-            <button
-              type="button"
-              className="burger"
-              aria-label="Open menu"
-              onClick={() => setMobileOpen(true)}
-            >
-              <span />
-              <span />
-              <span />
-            </button>
-          </div>
-        </div>
-      </header>
+    <header
+      id="site-header"
+      className={scrolled || open ? "scrolled" : undefined}
+    >
+      <div className="headbar">
+        <Link href="/#top" className="brand" onClick={() => setOpen(false)}>
+          <span className="brand-mark" aria-hidden="true">
+            <BrandMark />
+          </span>
+          <span className="brand-text">
+            <span className="brand-word">Asbidale Consultancy Services</span>
+            <span className="brand-sub">Pvt. Ltd. Co.</span>
+          </span>
+        </Link>
 
-      <div className={`mobile-nav${mobileOpen ? " open" : ""}`}>
-        <div className="close-row">
-          <button
-            type="button"
-            className="x"
-            aria-label="Close menu"
-            onClick={() => setMobileOpen(false)}
-          >
-            &times;
-          </button>
-        </div>
-        <ul>
+        <nav className="mainnav" aria-label="Primary">
+          <ul>
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a href={link.href}>{link.label}</a>
+              </li>
+            ))}
+          </ul>
+          <span className="nav-divider" aria-hidden="true" />
+          <div className="portal-links" aria-label="Portals">
+            {portals.map(({ href, label, Icon }) => (
+              <Link key={href} href={href}>
+                <Icon size={15} /> {label}
+              </Link>
+            ))}
+          </div>
+          <a href="/#contact" className="btn solid">
+            Start a conversation <ArrowUpRight size={14} />
+          </a>
+        </nav>
+
+        <button
+          type="button"
+          className="burger"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          onClick={() => setOpen((v) => !v)}
+        >
+          {open ? <X size={22} /> : <Menu size={22} />}
+        </button>
+      </div>
+
+      {open ? (
+        <nav className="site-drawer" aria-label="Mobile">
           {navLinks.map((link) => (
-            <li key={link.href}>
-              <a href={link.href} onClick={() => setMobileOpen(false)}>
-                {link.label}
-              </a>
-            </li>
-          ))}
-          <li>
-            <a href="#contact" onClick={() => setMobileOpen(false)}>
-              Contact
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setOpen(false)}
+            >
+              {link.label}
             </a>
-          </li>
-        </ul>
-        <div className="mobile-cta">
+          ))}
+          <p className="site-drawer-label">Workspaces</p>
+          {portals.map(({ href, label, hint, Icon }) => (
+            <Link
+              key={href}
+              href={href}
+              className="site-drawer-portal"
+              onClick={() => setOpen(false)}
+            >
+              <Icon size={16} />
+              <span>
+                <b>{label} portal</b>
+                <small>{hint}</small>
+              </span>
+            </Link>
+          ))}
           <a
-            href="#contact"
-            className="btn solid"
-            onClick={() => setMobileOpen(false)}
+            href="/#contact"
+            className="site-drawer-cta"
+            onClick={() => setOpen(false)}
           >
             Start a conversation
           </a>
-        </div>
-      </div>
-    </>
+        </nav>
+      ) : null}
+    </header>
   );
 }
