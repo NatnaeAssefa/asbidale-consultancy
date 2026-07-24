@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ContactForm } from "@/components/ContactForm";
 import { HeroSignature } from "@/components/HeroSignature";
 import { NavigatorSection } from "@/components/NavigatorSection";
@@ -135,7 +136,18 @@ export default function Home() {
 
       <main id="top">
         <section className="hero">
-          <div className="wrap">
+          <div className="hero-media" aria-hidden="true">
+            <Image
+              src="/media/lab-research.jpg"
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              className="hero-media-img"
+            />
+            <div className="hero-media-veil" />
+          </div>
+          <div className="wrap hero-content">
             <div className="hero-grid">
               <div>
                 <div className="eyebrow">
@@ -219,13 +231,24 @@ export default function Home() {
               </p>
             </div>
 
-            <p className="about-quote">
-              &ldquo;We no longer live in a remote past where time is in
-              abundance. For a firm like Asbidale, or a humanitarian mission,
-              the delay of gathering and categorizing data manually can mean the
-              difference between a successful health intervention and a failed
-              one.&rdquo;
-            </p>
+            <div className="about-stage">
+              <p className="about-quote">
+                &ldquo;We no longer live in a remote past where time is in
+                abundance. For a firm like Asbidale, or a humanitarian mission,
+                the delay of gathering and categorizing data manually can mean the
+                difference between a successful health intervention and a failed
+                one.&rdquo;
+              </p>
+              <figure className="about-photo">
+                <Image
+                  src="/media/clinic-care.jpg"
+                  alt="Clinicians collaborating in a healthcare setting"
+                  width={720}
+                  height={900}
+                  sizes="(max-width: 900px) 100vw, 42vw"
+                />
+              </figure>
+            </div>
 
             <div className="vm-grid">
               <div className="vm-card">
@@ -312,6 +335,27 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="media-break" aria-label="Digital health in practice">
+          <div className="media-break-frame">
+            <Image
+              src="/media/health-tech.jpg"
+              alt="Healthcare professional reviewing clinical data on a digital display"
+              fill
+              sizes="100vw"
+              className="media-break-img"
+            />
+            <div className="media-break-veil" />
+            <div className="wrap media-break-copy">
+              <p className="eyebrow">In the field</p>
+              <h2>Where clinical rigor meets digital systems.</h2>
+              <p>
+                From trial sites to telemedicine workflows, our work lives in
+                real care environments — not slide decks.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section id="ai" className="ai-band">
           <div className="wrap">
             <div className="section-head">
@@ -339,6 +383,16 @@ export default function Home() {
         </section>
 
         <section id="team">
+          <div className="team-banner">
+            <Image
+              src="/media/team-clinical.jpg"
+              alt="Clinical research team in a modern medical environment"
+              fill
+              sizes="100vw"
+              className="team-banner-img"
+            />
+            <div className="team-banner-veil" />
+          </div>
           <div className="wrap">
             <div className="section-head">
               <div>
