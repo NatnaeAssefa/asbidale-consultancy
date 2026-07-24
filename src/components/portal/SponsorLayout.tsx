@@ -103,7 +103,7 @@ export function SponsorLayout({ children }: { children: React.ReactNode }) {
           </nav>
           <div className="portal-aside-card">
             <p>Support</p>
-            <p>info@asbidale.com</p>
+            <p>director@asbidale.com</p>
             <p>+251 911 248 265</p>
           </div>
         </aside>

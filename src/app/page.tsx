@@ -118,6 +118,30 @@ const team = [
     role: "HR Manager",
     desc: "People operations and organizational development.",
   },
+  {
+    initials: "RT",
+    name: "Rufael Tesfaye, BSc",
+    role: "General Manager",
+    desc: "Leading day-to-day operations and organisational delivery.",
+  },
+  {
+    initials: "SA",
+    name: "Samuel Ayele, MSc",
+    role: "Biostatistician and Data Manager",
+    desc: "Biostatistics, study data integrity, and analytical reporting.",
+  },
+  {
+    initials: "BJ",
+    name: "Bilal Jemal, BSc",
+    role: "Biomedical Engineer",
+    desc: "Biomedical systems, equipment, and technical implementation support.",
+  },
+  {
+    initials: "FK",
+    name: "Firdaws Kalid, MD",
+    role: "Project Officer",
+    desc: "Supporting clinical and research project coordination and delivery.",
+  },
 ];
 
 const values = [
@@ -584,8 +608,8 @@ export default function Home() {
                 </p>
 
                 <div className="contact-detail">
-                  <a href="mailto:info@asbidale.com">
-                    <span className="label">Email</span> info@asbidale.com
+                  <a href="mailto:director@asbidale.com">
+                    <span className="label">Email</span> director@asbidale.com
                   </a>
                   <a href="tel:+251911248265">
                     <span className="label">Phone</span> +251 911 248 265
@@ -649,7 +673,7 @@ export default function Home() {
                 <h5>Contact</h5>
                 <ul>
                   <li>
-                    <a href="mailto:info@asbidale.com">info@asbidale.com</a>
+                    <a href="mailto:director@asbidale.com">director@asbidale.com</a>
                   </li>
                   <li>
                     <a href="tel:+251911248265">+251 911 248 265</a>
