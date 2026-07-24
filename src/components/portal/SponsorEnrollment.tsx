@@ -76,7 +76,7 @@ export function SponsorEnrollment() {
                 <Line
                   type="monotone"
                   dataKey="enrolled"
-                  stroke="#1018cc"
+                  stroke="#2dbd4a"
                   strokeWidth={2.5}
                   dot={{ r: 3 }}
                 />

@@ -24,7 +24,7 @@ import {
 import type { Milestone } from "@/lib/portal-types";
 
 const STATUS_COLORS: Record<string, string> = {
-  completed: "#1018cc",
+  completed: "#2dbd4a",
   in_progress: "#f59e0b",
   not_started: "#cbd5e1",
 };
@@ -158,7 +158,7 @@ export function SponsorOverview({ milestones }: { milestones: Milestone[] }) {
                 <Tooltip
                   contentStyle={{ border: "1px solid #cbd5e1", fontSize: 12 }}
                 />
-                <Bar dataKey="completed" stackId="a" fill="#1018cc" />
+                <Bar dataKey="completed" stackId="a" fill="#2dbd4a" />
                 <Bar dataKey="inProgress" stackId="a" fill="#f59e0b" />
                 <Bar dataKey="notStarted" stackId="a" fill="#cbd5e1" />
               </BarChart>

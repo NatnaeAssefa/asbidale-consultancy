@@ -1,19 +1,19 @@
 :root {
-  --ink: #0a0e1a;
-  --ink-soft: #2e3548;
-  --paper: #f4f5fa;
-  --paper-raised: #fafbff;
-  --line: #d8dcea;
-  --navy-deep: #080c18;
-  --navy: #121a3a;
-  --teal: #1018cc;
-  --teal-tint: #e4e7fc;
-  --teal-deep: #0c12a3;
-  --gold: #1018cc;
-  --gold-tint: #e8ebfc;
-  --gold-deep: #0c12a3;
-  --muted: #5c6678;
-  --brand-light: #8b94f0;
+  --ink: #0b120e;
+  --ink-soft: #2a3a30;
+  --paper: #f4f7f4;
+  --paper-raised: #fafcfb;
+  --line: #d4ddd6;
+  --navy-deep: #07110a;
+  --navy: #102016;
+  --teal: #2dbd4a;
+  --teal-tint: #e7f8eb;
+  --teal-deep: #1c8f35;
+  --gold: #2dbd4a;
+  --gold-tint: #eaf9ed;
+  --gold-deep: #1c8f35;
+  --muted: #5c6b61;
+  --brand-light: #6fd987;
   --radius: 2px;
   --disp: var(--font-disp), Georgia, serif;
   --body: var(--font-body), Arial, sans-serif;
@@ -324,8 +324,8 @@ nav.mainnav .btn {
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(ellipse at 78% 8%, rgba(16, 24, 204, 0.1), transparent 55%),
-    radial-gradient(ellipse at 10% 90%, rgba(16, 24, 204, 0.06), transparent 50%),
+    radial-gradient(ellipse at 78% 8%, rgba(45, 189, 74, 0.12), transparent 55%),
+    radial-gradient(ellipse at 10% 90%, rgba(45, 189, 74, 0.07), transparent 50%),
     var(--paper);
 }
 
@@ -755,9 +755,9 @@ section.tight {
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(ellipse at 12% 0%, rgba(16, 24, 204, 0.08), transparent 48%),
-    radial-gradient(ellipse at 88% 100%, rgba(8, 12, 24, 0.05), transparent 42%),
-    linear-gradient(180deg, #eef0f8 0%, var(--paper) 55%, var(--paper) 100%);
+    radial-gradient(ellipse at 12% 0%, rgba(45, 189, 74, 0.1), transparent 48%),
+    radial-gradient(ellipse at 88% 100%, rgba(7, 17, 10, 0.05), transparent 42%),
+    linear-gradient(180deg, #eef5ef 0%, var(--paper) 55%, var(--paper) 100%);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -767,8 +767,8 @@ section.tight {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(16, 24, 204, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(16, 24, 204, 0.035) 1px, transparent 1px);
+    linear-gradient(rgba(45, 189, 74, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(45, 189, 74, 0.04) 1px, transparent 1px);
   background-size: 48px 48px;
   -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 78%);
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 78%);
@@ -866,7 +866,7 @@ section.tight {
 }
 
 .tone-global .partner-kicker {
-  color: #4a56c8;
+  color: #2a9e44;
 }
 
 .tone-sister .partner-kicker {
@@ -1141,7 +1141,7 @@ footer {
 }
 
 .foot-brand .brand-sub {
-  color: #a5adf7;
+  color: #2dbd4a;
   margin-top: 4px;
 }
 

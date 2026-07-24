@@ -37,7 +37,7 @@ export function buildInquiryEmail(data: InquiryEmailData) {
           <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:560px;background:#ffffff;border:1px solid #d8dcea;">
             <tr>
               <td style="background:#080c18;padding:22px 28px;">
-                <p style="margin:0;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#8b94f0;">Asbidale Consultancy Services</p>
+                <p style="margin:0;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#6fd987;">Asbidale Consultancy Services</p>
                 <h1 style="margin:8px 0 0;font-size:22px;line-height:1.3;color:#ffffff;font-weight:600;">New website inquiry</h1>
               </td>
             </tr>
@@ -54,7 +54,7 @@ export function buildInquiryEmail(data: InquiryEmailData) {
                   <tr>
                     <td style="padding:12px 0;border-bottom:1px solid #d8dcea;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#5c6678;">Email</td>
                     <td style="padding:12px 0;border-bottom:1px solid #d8dcea;font-size:15px;color:#080c18;">
-                      <a href="mailto:${escapeHtml(data.email)}" style="color:#1018cc;text-decoration:none;">${escapeHtml(data.email)}</a>
+                      <a href="mailto:${escapeHtml(data.email)}" style="color:#1c8f35;text-decoration:none;">${escapeHtml(data.email)}</a>
                     </td>
                   </tr>
                   <tr>
